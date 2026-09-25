@@ -67,7 +67,8 @@ section { padding: clamp(4rem, 9vw, 8rem) clamp(1.5rem, 6vw, 6rem); }
   color: var(--ink);
 }
 .brand { display: flex; align-items: center; gap: 0.6rem; }
-.brand-mark { height: 34px; width: auto; filter: brightness(0) invert(1); opacity: 0.95; transition: filter 0.4s var(--ease); }
+.brand-mark { height: 56px; width: auto; filter: brightness(0) invert(1); opacity: 0.95; transition: filter 0.4s var(--ease), height 0.4s var(--ease); }
+.site-header.scrolled .brand-mark { height: 46px; }
 .site-header.scrolled .brand-mark { filter: invert(1) brightness(0.15); }
 .brand-name { font-family: var(--serif); font-size: 1.25rem; letter-spacing: 0.02em; color: inherit; }
 
@@ -198,7 +199,7 @@ section { padding: clamp(4rem, 9vw, 8rem) clamp(1.5rem, 6vw, 6rem); }
   padding: 3rem 1.5rem 2.5rem; text-align: center; color: var(--ink-soft); font-size: 0.82rem;
   border-top: 1px solid var(--line);
 }
-.footer-mark { height: 30px; opacity: 0.5; filter: invert(1) brightness(0.15); }
+.footer-mark { height: 48px; opacity: 0.6; filter: invert(1) brightness(0.15); }
 
 /* whatsapp fab */
 .whatsapp-fab {

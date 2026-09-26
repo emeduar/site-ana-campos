@@ -116,16 +116,24 @@
     <div class="section-heading reveal">
       <p class="eyebrow">Galeria</p>
       <h2>Momentos do meu trabalho</h2>
+      <p class="gallery-count"><span id="galleryCount">0</span> fotos</p>
     </div>
-    <div class="gallery-grid">
-      <div class="gallery-item reveal"><img src="assets/img/gallery-1.jpg" alt="Atendimento estético"></div>
-      <div class="gallery-item reveal"><img src="assets/img/gallery-2.jpg" alt="Atendimento estético"></div>
-      <div class="gallery-item reveal"><img src="assets/img/gallery-3.jpg" alt="Atendimento estético"></div>
-      <div class="gallery-item reveal"><img src="assets/img/gallery-4.jpg" alt="Atendimento estético"></div>
-      <div class="gallery-item reveal"><img src="assets/img/gallery-5.jpg" alt="Atendimento estético"></div>
-      <div class="gallery-item reveal"><img src="assets/img/gallery-6.jpg" alt="Atendimento estético"></div>
-    </div>
+
+    <div class="gallery-masonry" id="galleryMasonry"><!-- injetado via script.js --></div>
+
+    <button class="btn btn-ghost gallery-more" id="galleryMore">Carregar mais fotos</button>
   </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">&#8249;</button>
+    <figure class="lightbox-figure">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCount"></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Próxima foto">&#8250;</button>
+  </div>
 
   <!-- DEPOIMENTOS -->
   <section id="depoimentos" class="testimonials">

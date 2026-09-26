@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ana-campos.vercel.app/sitemap.xml

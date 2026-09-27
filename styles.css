@@ -95,10 +95,10 @@ section { padding: clamp(5rem, 11vw, 9rem) var(--gutter); }
   box-shadow: 0 1px 0 var(--line); height: 70px;
 }
 .brand { display: flex; align-items: center; gap: 0.8rem; }
-.brand-mark { height: 50px; width: auto; filter: invert(1) brightness(0.17); transition: height 0.4s var(--ease); }
-.site-header.scrolled .brand-mark { height: 42px; }
+.brand-mark { height: 62px; width: auto; filter: invert(1) brightness(0.17); transition: height 0.4s var(--ease); }
+.site-header.scrolled .brand-mark { height: 50px; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
-.brand-name { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; }
+.brand-name { font-family: var(--serif); font-size: 1.55rem; font-weight: 500; }
 .brand-tag { font-size: 0.6rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--ink-soft); }
 
 .nav { display: flex; align-items: center; gap: 2.3rem; }
@@ -142,7 +142,7 @@ section { padding: clamp(5rem, 11vw, 9rem) var(--gutter); }
 .hero-badge { position: absolute; left: -58px; bottom: 60px; width: 124px; height: 124px; border-radius: 50%; background: var(--cream); box-shadow: 0 16px 40px -12px rgba(43,38,33,0.3); display: grid; place-items: center; }
 .badge-ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 22s linear infinite; }
 .badge-ring text { font-family: var(--sans); font-size: 9.2px; letter-spacing: 3.1px; fill: var(--ink); font-weight: 500; }
-.badge-mark { width: 30px; height: auto; filter: invert(1) brightness(0.17); }
+.badge-mark { height: 38px; width: auto; filter: invert(1) brightness(0.17); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ---------- Marquee ---------- */
@@ -280,7 +280,7 @@ section { padding: clamp(5rem, 11vw, 9rem) var(--gutter); }
 .contact-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
 .contact-media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(43,38,33,0.72), rgba(43,38,33,0.86)); }
 .contact-inner { position: relative; z-index: 1; max-width: 640px; display: flex; flex-direction: column; align-items: center; }
-.contact-mark { height: 64px; width: auto; margin-bottom: 1.8rem; opacity: 0.9; }
+.contact-mark { height: 84px; width: auto; margin-bottom: 1.8rem; opacity: 0.9; }
 .contact h2 { margin-bottom: 1.1rem; }
 .contact h2 em { color: var(--gold-soft); }
 .contact-inner > p { color: rgba(250,246,240,0.85); margin-bottom: 2.3rem; font-size: 1.05rem; }
@@ -357,6 +357,9 @@ section { padding: clamp(5rem, 11vw, 9rem) var(--gutter); }
   .nav a { font-family: var(--serif); font-size: 1.9rem; }
   .nav-cta { font-family: var(--sans) !important; font-size: 1rem !important; margin-top: 1rem; }
   .nav-toggle { display: flex; }
+  .brand-mark { height: 52px; }
+  .site-header.scrolled .brand-mark { height: 44px; }
+  .brand-name { font-size: 1.35rem; }
 
   .hero { grid-template-columns: 1fr; text-align: left; padding-top: calc(var(--header-h) + 1.5rem); gap: 2.5rem; }
   .hero-visual { width: min(88%, 380px); order: -1; }

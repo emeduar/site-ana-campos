@@ -249,3 +249,16 @@ const stage = document.getElementById('quoteStage');
 stage.addEventListener('mouseenter', () => clearInterval(quoteTimer));
 stage.addEventListener('mouseleave', restartQuotes);
 restartQuotes();
+
+// ---------- Videos: play only while on screen ----------
+const videos = document.querySelectorAll('.video-card video');
+const videoObserver = new IntersectionObserver(entries => {
+  entries.forEach(({ target, isIntersecting }) => {
+    if (isIntersecting && !reduceMotion) target.play().catch(() => {});
+    else target.pause();
+  });
+}, { threshold: 0.6 });
+videos.forEach(v => {
+  videoObserver.observe(v);
+  v.addEventListener('click', () => (v.paused ? v.play() : v.pause()));
+});

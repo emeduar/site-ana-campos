@@ -33,10 +33,10 @@
 <meta name="twitter:description" content="Protocolos faciais personalizados, com técnica apurada e um olhar atento a cada detalhe da sua pele.">
 <meta name="twitter:image" content="https://ana-campos.vercel.app/assets/img/og-image.jpg">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/img/hero.webp">
+<link rel="preload" href="assets/fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-720.webp" imagesrcset="assets/img/hero-720.webp 720w, assets/img/hero.webp 960w" imagesizes="(max-width: 860px) 88vw, 460px">
 <link rel="stylesheet" href="styles.css">
 
 <script type="application/ld+json">
@@ -72,7 +72,7 @@
 
 <header class="site-header" id="siteHeader">
   <a href="#top" class="brand" aria-label="Ana Campos — início">
-    <img src="assets/img/logo-mark.png" alt="" class="brand-mark" width="40" height="56">
+    <img src="assets/img/logo-mark.png" alt="" class="brand-mark" width="160" height="160">
     <span class="brand-text">
       <span class="brand-name">Ana Campos</span>
       <span class="brand-tag">Estética Avançada</span>
@@ -113,14 +113,14 @@
     </div>
     <div class="hero-visual">
       <div class="arch arch-hero">
-        <img src="assets/img/hero.webp" alt="Ana Campos sorrindo, de blazer branco, em seu espaço de atendimento" width="1067" height="1600" fetchpriority="high">
+        <img src="assets/img/hero-720.webp" srcset="assets/img/hero-720.webp 720w, assets/img/hero.webp 960w" sizes="(max-width: 860px) 88vw, 460px" alt="Ana Campos sorrindo, de blazer branco, em seu espaço de atendimento" width="960" height="1280" fetchpriority="high">
       </div>
       <div class="hero-badge" aria-hidden="true">
         <svg viewBox="0 0 120 120" class="badge-ring">
           <defs><path id="circlePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
           <text><textPath href="#circlePath">ANA CAMPOS · ESTÉTICA AVANÇADA · </textPath></text>
         </svg>
-        <img src="assets/img/logo-mark.png" alt="" class="badge-mark">
+        <img src="assets/img/logo-mark.png" alt="" class="badge-mark" width="160" height="160">
       </div>
     </div>
   </section>
@@ -136,8 +136,8 @@
   <!-- SOBRE -->
   <section id="sobre" class="about">
     <div class="about-visual reveal">
-      <div class="arch arch-about"><img src="assets/img/about.webp" alt="Ana Campos refletida no espelho de seu espaço" loading="lazy" width="1067" height="1600"></div>
-      <div class="about-inset"><img src="assets/img/about-2.webp" alt="Ana Campos em frente ao logotipo do espaço" loading="lazy" width="1067" height="1600"></div>
+      <div class="arch arch-about"><img src="assets/img/about-640.webp" srcset="assets/img/about-640.webp 640w, assets/img/about.webp 854w" sizes="(max-width: 860px) 90vw, 460px" alt="Ana Campos refletida no espelho de seu espaço" loading="lazy" width="854" height="1280"></div>
+      <div class="about-inset"><img src="assets/img/about-2-400.webp" srcset="assets/img/about-2-400.webp 400w, assets/img/about-2.webp 854w" sizes="(max-width: 860px) 40vw, 200px" alt="Ana Campos em frente ao logotipo do espaço" loading="lazy" width="854" height="1280"></div>
     </div>
     <div class="about-content">
       <p class="eyebrow reveal">Sobre mim</p>
@@ -179,7 +179,7 @@
 
   <!-- COMO FUNCIONA -->
   <section class="process">
-    <div class="process-media reveal"><img src="assets/img/service.webp" alt="Ana Campos realizando um tratamento facial com máscara" loading="lazy" width="1067" height="1600"></div>
+    <div class="process-media reveal"><img src="assets/img/service-640.webp" srcset="assets/img/service-640.webp 640w, assets/img/service.webp 854w" sizes="(max-width: 860px) 90vw, 45vw" alt="Ana Campos realizando um tratamento facial com máscara" loading="lazy" width="854" height="1280"></div>
     <div class="process-content">
       <p class="eyebrow reveal">Como funciona</p>
       <h2 class="reveal">Do primeiro contato<br><em>ao resultado.</em></h2>
@@ -259,9 +259,9 @@
 
   <!-- CONTATO -->
   <section id="contato" class="contact">
-    <div class="contact-media"><img src="assets/img/space.webp" alt="" loading="lazy" width="1067" height="1600"></div>
+    <div class="contact-media"><img src="assets/img/space-640.webp" srcset="assets/img/space-640.webp 640w, assets/img/space.webp 854w" sizes="100vw" alt="" loading="lazy" width="854" height="1280"></div>
     <div class="contact-inner">
-      <img src="assets/img/logo-mark.png" alt="" class="contact-mark" width="48" height="67">
+      <img src="assets/img/logo-mark.png" alt="" class="contact-mark" width="160" height="160">
       <h2 class="reveal">Sua pele merece<br><em>esse cuidado.</em></h2>
       <p class="reveal">Agende sua avaliação pelo WhatsApp — respondo pessoalmente.</p>
       <a href="https://wa.me/5531982804945?text=Ol%C3%A1%2C%20Ana!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-light reveal">
